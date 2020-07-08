@@ -1,6 +1,8 @@
 # GMail to Line Bot
 GMAILを指定指定条件で検索した結果をLINE BOTに通知する。
 
+![](./image/説明.png)
+
 # version
 | date     | ver | note |
 | -------- | --- | -----|
