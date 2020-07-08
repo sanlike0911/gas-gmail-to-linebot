@@ -11,26 +11,25 @@ var GMAIL_QUERY = "is:unread label:ラベル名";
 
 // func: LINE BOT
 function pushMessageLineBot( _message ) {
-    //deleteTrigger();
-var _postData = {
-    "messages": [{
-    "type": "text",
-    "text": _message,
-    }]
-};
+    var _postData = {
+        "messages": [{
+        "type": "text",
+        "text": _message,
+        }]
+    };
 
-var _url = "https://api.line.me/v2/bot/message/broadcast";
-var _headers = {
-    "Content-Type": "application/json",
-    'Authorization': 'Bearer ' + LINEBOT_CHANNEL_TOKEN,
-};
+    var _url = "https://api.line.me/v2/bot/message/broadcast";
+    var _headers = {
+        "Content-Type": "application/json",
+        'Authorization': 'Bearer ' + LINEBOT_CHANNEL_TOKEN,
+    };
 
-var _options = {
-    "method": "post",
-    "headers": _headers,
-    "payload": JSON.stringify(_postData)
-};
-var response = UrlFetchApp.fetch(_url, _options);
+    var _options = {
+        "method": "post",
+        "headers": _headers,
+        "payload": JSON.stringify(_postData)
+    };
+    var response = UrlFetchApp.fetch(_url, _options);
 }
 
 // func: LINE Notify ※必要であれば
