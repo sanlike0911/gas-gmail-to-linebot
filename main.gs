@@ -5,8 +5,8 @@ var LINEBOT_CHANNEL_TOKEN = 'XXXXXXXXXXXXXXXX';
 // setting: Line Notify ※必要であれば
 var LINE_NOTIFY_TOKEN = "XXXXXXXXXXXXXXXX";
 
-// setting: GAMIL ※未読 かつ ラベル名
-var GMAIL_QUERY = "is:unread label:ラベル名";
+// setting: GAMIL ※未読 かつ ラベル名(下記サンプルのラベル条件は複数指定[OR])
+var GMAIL_QUERY = "is:unread label:{ラベル名1 ラベル名2}";
 /* ------------------------------------------------------- */
 
 // func: LINE BOT
